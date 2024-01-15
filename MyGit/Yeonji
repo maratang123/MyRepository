@@ -1,0 +1,51 @@
+// 변수 선언과 할당
+var message = "Hello, World!"; // var은 예전에 사용되던 키워드, let과 const를 더 권장
+let name = "John";
+let age = 25;
+let isStudent = true;
+
+// 산술 연산자와 비교 연산자
+let sum = 10 + 5; // 덧셈
+let isEqual = age === 25; // 값과 데이터 타입이 동일한지 비교
+
+// 조건문
+if (isStudent) {
+  console.log("Student");
+} else {
+  console.log("Not a student");
+}
+
+// 반복문
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// 함수 정의와 호출
+function greet(person) {
+  return "Hello, " + person + "!";
+}
+
+let greeting = greet(name);
+console.log(greeting);
+
+// 객체(Object)와 배열(Array)
+let person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
+};
+
+let numbers = [1, 2, 3, 4, 5];
+
+// 배열 순회
+for (let number of numbers) {
+  console.log(number);
+}
+
+// DOM 조작 (웹 페이지의 HTML 요소에 접근)
+document.getElementById("myElement").innerHTML = "New content";
+
+// 이벤트 처리
+document.getElementById("myButton").addEventListener("click", function() {
+  alert("Button clicked!");
+});
