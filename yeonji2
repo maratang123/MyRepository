@@ -1,0 +1,33 @@
+#짝수 홀수 출력하기
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i + "은(는) 짝수입니다.");
+  } else {
+    console.log(i + "은(는) 홀수입니다.");
+  }
+}
+#이름을 순서대로 출력해서 환영메세지 보내기
+const names = ["Alice", "Bob", "Charlie", "David", "Emma"];
+
+for (let i = 0; i < names.length; i++) {
+  console.log("안녕하세요, " + names[i] + "님!");
+}
+#피보나치수열
+function fibonacci(n) {
+  let fibArray = [0, 1];
+
+  for (let i = 2; i < n; i++) {
+    fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
+  }
+
+  return fibArray;
+}
+
+const userInput = parseInt(prompt("피보나치 수열을 몇 번째 항까지 출력할까요?"));
+
+if (!isNaN(userInput) && userInput > 0) {
+  const result = fibonacci(userInput);
+  console.log(`피보나치 수열(${userInput}까지):`, result.join(", "));
+} else {
+  console.log("올바른 숫자를 입력하세요.");
+}
